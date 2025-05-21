@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MainProcessingService", "MainProcessingService", "{973DEC95-1CD4-4F75-8315-368630B76CD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataCaptureService", "DataCaptureService", "{DBCEDE69-CDFB-43FB-9C24-1417295D4187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCaptureService", "DataCaptureService\DataCaptureService\DataCaptureService.csproj", "{FCF6B2A1-FA18-4AE5-8B08-2FFC5DC3D2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProcessingService", "MainProcessingService\MainProcessingService\MainProcessingService.csproj", "{0527FD0E-37F3-461C-9533-55B514735EE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageTransformationService", "ImageTransformationService", "{38C8534C-F03D-4F3E-9D0B-24C649BF9EC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageTransformationService", "ImageTransformationService\ImageTransformationService\ImageTransformationService.csproj", "{9510635A-424C-41FD-ADD5-9485EF9D533F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCF6B2A1-FA18-4AE5-8B08-2FFC5DC3D2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF6B2A1-FA18-4AE5-8B08-2FFC5DC3D2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF6B2A1-FA18-4AE5-8B08-2FFC5DC3D2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF6B2A1-FA18-4AE5-8B08-2FFC5DC3D2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0527FD0E-37F3-461C-9533-55B514735EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0527FD0E-37F3-461C-9533-55B514735EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0527FD0E-37F3-461C-9533-55B514735EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0527FD0E-37F3-461C-9533-55B514735EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9510635A-424C-41FD-ADD5-9485EF9D533F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9510635A-424C-41FD-ADD5-9485EF9D533F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9510635A-424C-41FD-ADD5-9485EF9D533F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9510635A-424C-41FD-ADD5-9485EF9D533F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCF6B2A1-FA18-4AE5-8B08-2FFC5DC3D2AF} = {DBCEDE69-CDFB-43FB-9C24-1417295D4187}
+		{0527FD0E-37F3-461C-9533-55B514735EE8} = {973DEC95-1CD4-4F75-8315-368630B76CD3}
+		{9510635A-424C-41FD-ADD5-9485EF9D533F} = {38C8534C-F03D-4F3E-9D0B-24C649BF9EC8}
+	EndGlobalSection
+EndGlobal
