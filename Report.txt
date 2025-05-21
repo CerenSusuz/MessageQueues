@@ -1,0 +1,45 @@
+﻿Task: Build a system for continuous processing of scanned images
+Tools: .NET 8, RabbitMQ, ImageSharp, Tesseract OCR
+Architecture: Microservice with message queues
+
+🧩 Project Components
+DataCaptureService
+
+It watches a folder called InputFiles.
+
+When a file is added, it reads and splits the file into chunks (512 KB).
+
+Each chunk is sent to RabbitMQ (file_queue).
+
+MainProcessingService
+
+It listens to file_queue.
+
+It collects all chunks and combines them into the original file.
+
+It saves the file to ReceivedFiles/ folder.
+
+Then, it sends the full file to transform_queue.
+
+ImageTransformationService
+
+It listens to transform_queue.
+
+Converts the image to .jpg format.
+
+Uses Tesseract OCR to read text from the image.
+
+Saves the image and text result to TransformedFiles/.
+
+✅ What Works
+Files are split and sent as chunks.
+
+Big files (over 300MB) are supported.
+
+Queue message size limits are bypassed using chunking.
+
+Files are not corrupted.
+
+OCR (text recognition) works with test images.
+
+System works with multiple data capture services at the same time.
